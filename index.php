@@ -212,7 +212,7 @@ if ($status == 1) {
             <div id="footer">
                 <i>*Berjalan optimal di browser Mozilla Firefox dan Google Chrome terbaru</i><br/>
                 automaBELL v.2 - cd:20190209, cn:#viralBell<br/>
-                copyright &copy; 2014 - 2019 | <a href="https://github.com/aviantorichad" target="_blank">Richad Avianto</href></a><span> | Re-edited 20221019| <a href="https://github.com/el-musthofa">Syifaul Musthofa</a></span>
+                copyright &copy; 2014 - 2019 | <a href="https://github.com/aviantorichad" target="_blank">Richad Avianto</href></a><span> | Re-edited 20220119| <a href="https://github.com/el-musthofa">Syifaul Musthofa</a></span>
                 <?php
                 if (!empty($_SESSION['usernamebell'])) {
                     echo "<div><a href='p_logout.php' title='logout'>Logout</a></div>";
