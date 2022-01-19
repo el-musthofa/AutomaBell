@@ -57,7 +57,7 @@ if ($status == 9) { //..tidak aktif = 9
 <!DOCTYPE html>
 <head>
     <link rel="shortcut icon" type="x-icon" href="img/bell.png" />
-    <title>automaBELL - Bel Sekolah "Yang Kutunggu"</title>
+    <title>Bel MI Muhammadiyah 8 Bulu</title>
 
     <script type="text/javascript">
         function menunggumu() {
@@ -123,7 +123,7 @@ if ($status == 1) {
             var thn = tglPisah[3];
             Tgl = hari + ", " + tgl + "-" + bln + "-" + thn;
             var Jam = new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1");
-            document.getElementById("jam").innerHTML = "<span style='width:100%;'><span>Jam : </span><span style='font-size:34px;'>" + Jam + "</span></span>";
+            document.getElementById("jam").innerHTML = "<span style='width:100%;'><span style='font-size:18px;'>Jam : </span><span style='font-size:34px;font-weight:bold'>" + Jam + "</span></span>";
             document.getElementById("tgl").innerHTML = "<span style='font-size:12px;float:right;color:#f0f0f0;'>Hari ini : <span style='font-weight:bold;color:#fff;'>" + Tgl + "</span></span>";
         }
         function replaceDay(hariEng) {
@@ -167,29 +167,29 @@ if ($status == 1) {
                             echo 'class="aktiv"';
                         }
                     }
-                    ?>><img src="img/bg-icon.png" style="background-image: url('img/glyphicons-halflings-white.png');background-position: 0px -24px;background-repeat: no-repeat;margin-right:3px;"/>Beranda</a>
+                    ?>><img src="img/bg-icon.png" style="background-image: url('img/glyphicons-halflings-white.png');background-position: 0px -24px;background-repeat: no-repeat;margin-right:3px;"/>Home</a>
                     <a href="index.php?l=settings" <?php
                     if (isset($_GET['l'])) {
                         if ($_GET['l'] == 'settings') {
                             echo 'class="aktiv"';
                         }
                     }
-                    ?>><img src="img/bg-icon.png" style="background-image: url('img/glyphicons-halflings-white.png');background-position: -360px -144px;background-repeat: no-repeat;margin-right:3px;"/>Pengaturan</a>
+                    ?>><img src="img/bg-icon.png" style="background-image: url('img/glyphicons-halflings-white.png');background-position: -360px -144px;background-repeat: no-repeat;margin-right:3px;"/>Setting</a>
                     <a href="index.php?l=s_audio" <?php
                     if (isset($_GET['l'])) {
                         if ($_GET['l'] == 's_audio') {
                             echo 'class="aktiv"';
                         }
                     }
-                    ?>><img src="img/bg-icon.png" style="background-image: url('img/glyphicons-halflings-white.png');background-position: -336px -24px;background-repeat: no-repeat;margin-right:3px;"/>Unggah MP3</a>
+                    ?>><img src="img/bg-icon.png" style="background-image: url('img/glyphicons-halflings-white.png');background-position: -336px -24px;background-repeat: no-repeat;margin-right:3px;"/>Upload MP3 files</a>
                     <a href="Panduan.pdf" target="_blank" title="Bantuan"><img src="img/bg-icon.png" style="background-image: url('img/glyphicons-halflings-white.png');background-position: -96px -96px;background-repeat: no-repeat;margin-right:3px;" title="Bantuan"/></a>
                     <span id="tgl"></span>
                 </div>
             </div>
             <div style="clear:both;"></div>
             <div id="header">
-                <h1 style="font-size:34px;"><img src="img/bell.png" align="left" />automa<span style="color:gold;">BELL</span></h1>
-                <span style="font-family:fixedsys;">automatic <span style="color:gold;font-weight:bold;">bell</span> school solution</span>
+                <h1 style="font-size:34px;"><img src="img/bell.png" align="left" /><span style="color:gold;"> MI Muhammadiyah 8 Bulu</span></h1>
+                <span style="font-family:fixedsys;font-size:18px;">Automatic <span style="color:gold;font-weight:bold;">schoolBell</span></span>
                 <div id="jam"></div>
             </div>
             <div style="clear:both;"></div>
@@ -212,7 +212,7 @@ if ($status == 1) {
             <div id="footer">
                 <i>*Berjalan optimal di browser Mozilla Firefox dan Google Chrome terbaru</i><br/>
                 automaBELL v.2 - cd:20190209, cn:#viralBell<br/>
-                copyright &copy; 2014 - 2019 | <a href="https://github.com/aviantorichad" target="_blank">Richad Avianto</a>
+                copyright &copy; 2014 - 2019 | <a href="https://github.com/aviantorichad" target="_blank">Richad Avianto</href></a><span> | Re-edited 20221019| <a href="https://github.com/el-musthofa">Syifaul Musthofa</a></span>
                 <?php
                 if (!empty($_SESSION['usernamebell'])) {
                     echo "<div><a href='p_logout.php' title='logout'>Logout</a></div>";
